@@ -1,0 +1,156 @@
+body {
+    margin: 0; /* Отступы */
+    font-family: 'Raleway', sans-serif; /* Шрифт */
+    font-size: 14px;
+    color: #6c7279;
+    -webkit-font-smoothing: antialiased; /* Немножко сглаживает шрифт */
+
+
+    background-color: #fff; /* Цвет фона сайта */
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Алгоритм подсчета размера блоков (для всех)
+    Делает одинаковыми */    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+/* Container */
+.container {
+    width: 100%; /* Размер будет 100 процентный */
+    max-width: 1170px;  /* В лучаи изменения(переход в мобильную версию) максимальный размер */
+    margin: 0 auto; /* Отступы */
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_logo2 {
+    border: 2px solid #073598; /* Рамка вокруг фотографии */
+    padding: 5px; /* Расстояние от картинки до рамки */
+    background: #36bef3; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+    
+ 
+}
+
+.header__inner {
+    display: flex; /* Флексы */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #515369;
+    padding: 35px 0;
+}
+
+/* Nav
+=========================*/
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.nav__link {
+    margin-left: 50px;
+
+    color: rgb(255, 251, 251);
+    transition: opacity .2 linear; /* Переход скорость 0.2 линейный */
+}
+    
+
+.nav__link:first-child {
+    margin-left: 0;
+
+}
+.nav__link:hover {
+    color: rgb(255, 253, 253);
+    opacity: .7;
+    
+}
+
+/* Intro
+=========================*/
+
+.intro {
+    height: 1000px; /* Размер фоновой картинки intro */
+    padding-top: 300px;
+    background-color: #32344e;  /* Цвет фона на случай не прогрузки картинки */
+    background:  no-repeat center / cover  url("../img/intro.jpg");
+
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align:  center; /* выравниваем по центру текст блока */
+}
+
+.intro__title {
+    margin: 20px;
+    font-family: 'Open Sans', sans-serif; /* Шрифт */
+    font-size: 65px;    /* Размер */
+    line-height: 1.1; /* либо в пикселях это отступ между строками */
+    color: #fff;    /* Цвет */
+    font-weight:  700; /* Стиль шрифта */
+    text-transform: uppercase; /* Все буквы в тексте будут большими */
+    text-align: center; /* Выравниваем текст по центру */
+}
+
+.intro__subtitle {
+    margin: 40px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+
+}
+
+
+/* Button
+=========================*/
+.btn {
+    display: inline-block;  /* для задавания пэдингов(установить размер кнопки, отступы и тд.) */
+    vertical-align: top;    /* выравнивание по верху */
+    padding: 14px 40px; /* отступы сверху\снизу и слева\справа */
+    border-radius: 2px; /* скругление границ кнопки */
+    border: 0; /* убираем границу вокргу кнопки */
+    cursor: pointer; /* делаем курсор при наведение в форме руки */
+
+    font-family: 'Raleway', sans-serif; /* Наследуем и родительской кнопки */
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none; /* Украшение текста */
+    
+    transition: background-color .1s linear; /* плавное затемнение кнопки при наведении */
+
+}
+
+.btn--red {
+    background-color:#19b3e8;
+
+
+}
+
+.btn--red:hover {
+    background-color:#159dca;
+
+}
